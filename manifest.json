@@ -1,0 +1,33 @@
+{
+	"name": "AntiScam",
+	"version": "0.1.0",
+	"description": "Saves you from Scam/Fraudulent Websites",
+	"permissions": ["storage", "tabs"],
+	"host_permissions": ["https://*/*", "http://*/*"],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://*/*", "http://*/*"],
+			"css": ["modal.css"],
+			"js": ["contentScript.js"]
+		}
+	],
+	"web_accessible_resources": [
+		{
+			"resources": [],
+			"matches": ["https://*/*", "http://*/*"]
+		}
+	],
+	"action": {
+		"default_icon": {
+			"16": "assets/ext-icon.png",
+			"24": "assets/ext-icon.png",
+			"32": "assets/ext-icon.png"
+		},
+		"default_title": "Anti Scam",
+		"default_popup": "popup.html"
+	},
+	"manifest_version": 3
+}

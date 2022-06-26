@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.modal-backdrop-antiscam {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: grid;
+	place-content: center;
+	z-index: 99;
+}
+
+.modal-antiscam {
+	width: 30rem;
+	height: 20rem;
+	background-color: white;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top: #de7b7a solid 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-header-antiscam {
+	color: #de7b7a;
+	letter-spacing: 3px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.modal-content-antiscam {
+	color: rgb(110, 110, 110);
+	font-size: 0.75rem;
+	margin-top: 0.5rem;
+	padding: 2rem;
+	text-align: center;
+	font-size: 0.6rem;
+}
+
+.go-back-btn-antiscam {
+	width: 20%;
+	height: 10%;
+	border: none;
+	background-color: #5a5c89;
+	color: white;
+	letter-spacing: 2px;
+	border-radius: 3px;
+	transition: all linear 100ms;
+	cursor: pointer;
+}
+
+.go-back-btn-antiscam:hover {
+	transform: scale(1.2);
+}

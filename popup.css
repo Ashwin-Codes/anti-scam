@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.popup-container {
+	width: 25rem;
+	height: 20rem;
+	padding: 2rem;
+
+	background-image: url("./assets/bg.jpg");
+	background-size: cover;
+
+	display: grid;
+	place-content: center;
+}
+
+.popup-container-hostname,
+.popup-container-reports {
+	background-color: rgba(68, 68, 68, 0.5);
+	border-radius: 5px;
+	padding: 0.5rem 1rem;
+	margin-bottom: 1rem;
+	letter-spacing: 2px;
+	color: white;
+	font-size: 1rem;
+}
+
+.popup-blacklist-btn {
+	height: 2.2rem;
+	border: none;
+	background-color: #5a5c89;
+	color: white;
+	letter-spacing: 3px;
+	border-radius: 3px;
+	font-size: 1.5rem;
+	transition: all linear 100ms;
+	cursor: pointer;
+}
